@@ -1,9 +1,15 @@
-import './style.css'
+import styled from 'styled-components'
 
-function Icons({children, alt}){
-    return(
-        <img src={children} className="Icons" alt={alt}></img>
-    )
+const ImgIcon = styled.img`
+  margin-left: 50px;
+  width: 35px;
+`
+
+
+function Icons({src, alt }) {
+  return(
+    <ImgIcon src={src} alt={alt} />
+  )
 }
 
 export default Icons
